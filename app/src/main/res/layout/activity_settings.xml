@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activity.SettingsActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Цвет фона игры:"
+                android:textSize="24sp" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupSetColorBackgroundGame"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/radioButtonSetBackgroundWithe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhite"
+                    android:checked="true"
+                    android:text="Белый" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonSetBackgroundGreen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorLightGreen"
+                    android:text="Зеленый" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonSetBackgroundYellow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorYellow"
+                    android:text="Жёлтый" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonSetBackgroundBlack"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorBlack"
+                    android:text="Чёрный"
+                    android:textColor="@color/colorWhite" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Цвет вашего круга:"
+                android:textSize="24sp" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupSetColorMainCircle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <RadioButton
+                    android:id="@+id/radioButtonSetColorMainCircleBlue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Синий"
+                    android:checked="true"
+                    android:background="@android:color/holo_blue_light"/>
+
+                <RadioButton
+                    android:id="@+id/radioButtonSetColorMainCircleGreen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Зеленый"
+                    android:background="@android:color/holo_green_light" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonSetColorMainCircleOrange"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Оранжевый"
+                    android:background="@android:color/holo_orange_dark"/>
+
+                <RadioButton
+                    android:id="@+id/radioButtonSetColorMainCircleBlack"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Черный"
+                    android:textColor="@color/colorWhite"
+                    android:background="@android:color/black"/>
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Сохранить"
+                android:onClick="onClickSaveSettings"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="НАЗАД"
+                android:onClick="onClickToMain"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Информация о разроботчике"
+                android:clickable="true"
+                android:onClick="onClickInfoOfWhiteCat"
+                />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

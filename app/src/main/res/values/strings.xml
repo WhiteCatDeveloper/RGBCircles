@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">RGBCircles</string>
+    <string name="play_game">ИГРАТЬ</string>
+    <string name="game_mode">Режимы игры</string>
+    <string name="settings">Настройки</string>
+    <string name="achievements">Достижения</string>
+    <string name="set_of_game_difficulty">Выберите сложность</string>
+    <string name="set_of_game_speed">Выберите скорость</string>
+    <string-array name="spinner_set_game_difficulty">
+        <item>Легко</item>
+        <item>Средне</item>
+        <item>Сложно</item>
+    </string-array>
+
+    <string-array name="spinner_set_game_speed">
+        <item>Медленно</item>
+        <item>Средне</item>
+        <item>Быстро</item>
+    </string-array>
+
+</resources>
